@@ -1,0 +1,270 @@
+<! DOCTYPE html>
+<html>
+<head>
+   <title>home</title>
+   <meta content = "text/html" http-equiv = "content/type" charset = "utf-8">
+   
+   <!--мои стили-->
+   <link rel = "stylesheet" type = "text/css" href = "style_discover.css">
+   
+   <!--библиотека jquery-->
+    <script type="text/javascript" src="jqueri/jquery-1.11.3.min.js"></script>
+   
+   <!--стили слайдера-->
+   <link rel="stylesheet" type="text/css" href="slider/css/demo.css" />
+   <link rel="stylesheet" type="text/css" href="slider/css/style_alt.css" />
+   
+    <!--скрипт слайдер-->	
+    <!-- jmpress plugin -->
+    <script type="text/javascript" src="slider/js/jmpress.min.js"></script>
+	<!-- jmslideshow plugin : extends the jmpress plugin -->
+	<script type="text/javascript" src="slider/js/jquery.jmslideshow.js"></script>
+	<script type="text/javascript" src="slider/js/modernizr.custom.48780.js"></script>
+	<noscript>
+		<style>
+		.step {
+			width: 100%;
+			position: relative;
+		}
+		.step:not(.active) {
+			opacity: 1;
+			filter: alpha(opacity=99);
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+		}
+		.step:not(.active) a.jms-link{
+			opacity: 1;
+			margin-top: 40px;
+		}
+		</style>
+	</noscript>
+   
+</head>
+<body>
+   <div id = "head">
+      <div class = "head_block">
+	     <img src = "images/home.png">
+         <span>HOME LOANS</span>
+      </div>
+   </div>
+   
+   <!--slider-->     	
+        <div class="container">
+			
+			<section id="jms-slideshow" class="jms-slideshow">
+				<div class="step" data-color="color-1" data-x="2000" data-y="1000" data-z="3000" data-rotate="-20">
+				   <img src = "images/slider.png">
+				</div>									
+				
+				<div class="step" data-color="color-2" data-x="1000" data-z="2000" data-rotate="20">
+				   <img src = "images/slider2.png">
+				</div>
+					
+				
+				<div class="step" data-color="color-3" data-x="2000" data-y="1500" data-z="1000" data-rotate="20">
+				   <img src = "images/slider3.png">
+				</div>
+				
+				<div class="step" data-color="color-4" data-x="3000" data-y="2000">
+				   <img src = "images/slider4.png">
+				</div>
+				
+				<div class="step" data-color="color-5" data-x="4000" data-y="1500" data-z="1000" data-rotate="-20">
+				   <img src = "images/slider5.png">
+				</div>
+			</section>
+        </div>
+		<script type="text/javascript">
+			$(function() {
+			
+				$( '#jms-slideshow' ).jmslideshow();
+				
+			});
+		</script>
+   
+   
+   <div id = "content">  
+	   <div id = "content_block">	   
+		  <div id = "left">
+				 <a href = "#">
+				    <div id = "big_link_left">
+					   <span>GET STARTED</span>  
+				    </div>
+				 </a>
+				 <div class = "block block1">
+					 <span>SELECT YOUR GOAL</span>
+						 <div class = "select">			    
+							<a href = "#">
+							    <div class = "selected selected1">
+							         <p>BUY A HOME</p>
+							    </div>
+							</a>
+							<a href = "#">
+							   <div class = "selected selected2">
+							         <p>REFINANCE</p>
+							    </div>
+							</a>
+						 </div>
+				 </div>
+				 <div class = "block block2">
+					 <span>IN WHAT STATE WILL YOUR NEW HOME BE LOCATED?</span><sup>*</sup>
+					 <form action = "#" method = "post">
+					   <div class = "custom-select">   <!--обворачиваем select в div-->
+						   <select>
+							 <option>SELECT STATE</option>
+							 <option>NEW YORK</option>
+							 <option>TEXAS</option>
+							 <option>OCLACHOMA</option>
+							 <option>ALYASKA</option>
+						   </select>
+					   </div>  
+					 </form>
+				 </div>
+				 <div class = "block block3">
+					 <span>HAVE YOU FOUND YOUR NEW HOME?</span>
+						 <div class = "select">			    
+							<a href = "#">
+							    <div class = "selected selected1">
+							         <p>YES</p>
+							    </div>
+							</a>
+							<a href = "#">
+							   <div class = "selected selected2">
+							         <p>NO</p>
+							    </div>
+							</a>
+						 </div>
+				 </div>
+				 	<a href = "#">				 
+						 <div class = "next_step">
+						    <strong>NEXT STEP</strong>
+							<img src = "images/arrow_next.png">
+						 </div>
+				    </a>
+				<div class = "left_footer">
+				   <img src = "images/small_image1.png">
+				   <a href = "#">Important Rate Details</a>
+				</div>	
+				<div class = "left_footer">
+				   <img src = "images/small_image2.png">
+				   <span>This form is</span> <a href = "#"> secure </a>
+				</div>	
+		  </div>
+		  
+		  <div id = "right">
+		     <a href = "#">
+				 <div id = "big_link_right">
+					 <span>TODAY`S RATES</span>				                  				 
+				 </div>
+			 </a>
+             <div class = "block block1">
+					 <span>RATES AS OF: JUN 19, 2014 / 2:00 PM</span>
+					 <form action = "#" method = "post">
+					   <div class = "custom-select_right">   <!--обворачиваем select в div-->
+						   <select>
+							 <option>NEW JERCEY</option>
+							 <option>NEW YORK</option>
+							 <option>TEXAS</option>
+							 <option>OCLACHOMA</option>
+							 <option>ALYASKA</option>
+						   </select>
+					   </div>  
+					 </form>
+				 </div>
+             <div class = "block">
+			    <div class = "tables">
+				   <table class = "table" width = "379">
+				      <tr>
+					     <td width = "100">TYPE</td>
+					     <td align = "center">RATE
+						     <img src = "images/question_img.png">
+						 </td>
+					     <td align = "center">APR
+						    <img src = "images/question_img.png">
+						 </td>
+					  </tr>
+				   </table>
+				</div>
+			    <div class = "tables">
+				   <table class = "table table2" width = "400">
+				      <tr>
+					     <td width = "150">30 YEAR FIXED</td>
+					     <td width = "140">4.000%</td>						     			 
+					     <td width = "">4.258%</td>						    						 
+					  </tr>
+				   </table>
+				</div>
+			    <div class = "tables">
+				   <table class = "table table2" width = "400">
+				      <tr>
+					     <td width = "150">15 YEAR FIXED</td>
+					     <td width = "140">3.000%</td>						     			 
+					     <td width = "">3.428%</td>						    						 
+					  </tr>
+				   </table>
+				</div>
+			    <div class = "tables">
+				   <table class = "table table2" width = "400">
+				      <tr>
+					     <td width = "150">5/1 ARM</td>
+					     <td width = "140">2.875%</td>						     			 
+					     <td width = "">2.983%</td>						    						 
+					  </tr>
+				   </table>
+				</div>
+			 </div>
+             <div id = "link">
+			    <a href = "#">SEE ALL CURRENT MORTGAGE RATES</a>
+			 </div>
+			 <div class = "right_footer">
+				 <div class = "right_footer_link">
+					 <img src = "images/small_image1.png">
+					 <a href = "#">Important Rate Details</a>
+				 </div>
+				 <div class = "right_footer_text">
+					 <img src = "images/lock.png">
+					 <span>Your privacy is important to us.
+                           We do not share, rent or sell any consumer information.
+                     </span>
+				 </div>
+             </div>			 
+		  </div>		  
+	   </div>
+   </div>
+   
+   <div id = "footer">
+       <div class = "head_block">
+	     <img src = "images/home.png">
+         <span>HOME LOANS</span>
+		 
+      </div> 
+   </div>
+   
+   <div id = "footer_menu">
+      <div id = "menu">
+	      <ul>
+		     <li><a href = "#">SITE MAP</a></li> 
+		     <li><a href = "#">TERMS OF USE</a></li> 
+		     <li><a href = "#">SECURITY</a></li> 
+		     <li><a href = "#">PRIVACY</a></li> 
+		     <li><a href = "#">STATE LICENSES</a></li> 
+		     <li><a id = "last_link" href = "#">CONTACT US</a></li>
+		  </ul>
+		  <img src = "images/key.png">
+		  <div id = "last_div">
+		     <img src = "images/last_img.png">
+		  </div>
+	  </div>	  
+   </div> 
+</body>
+</html>
+
+
+
+
+	
+
+
+
+
+
+
